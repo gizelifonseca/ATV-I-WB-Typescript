@@ -1,0 +1,25 @@
+export default class CPF {
+    public valor: string
+    public dataEmissao: Date
+    
+    constructor(valor: string, dataEmissao: Date) {
+        this.valor = valor
+        this.dataEmissao = dataEmissao
+    }
+
+    public get getValor(): string {
+        return this.valor
+    }
+
+    public set setValor(valor: string){
+        this.valor = valor;
+    }
+
+    public get getDataEmissao(): Date {
+        return this.dataEmissao
+    }
+
+    public set setDataEmissao(dataEmissao: Date){
+        this.dataEmissao = dataEmissao;
+    }
+}
